@@ -1,4 +1,4 @@
-# What's this?
+## What's this?
 
 Example of FFI on esp32 with MicroPython
 
@@ -16,3 +16,12 @@ float 3.1415927410
 ```
 
 NB; 44 is a return value of printf().
+
+## How to build
+
+First, follow https://docs.micropython.org/en/latest/develop/cmodules.html
+
+Then, build something like this:
+```
+% make USER_C_MODULES=../micropython-printf-ffi-test/src/micropython.cmake
+```
